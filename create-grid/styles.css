@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.column {
+    text-align: center;
+    flex: 1;
+    background-color: bisque;
+}
+
+/* Media Queries */
+
+@media screen and (max-width : 740px) {
+  .row {
+    flex-wrap: wrap;
+  }
+  .column {
+    flex-basis: 100%;
+  }
+}
